@@ -1,8 +1,17 @@
 @{
     ViewData["Title"] = "Home Page";
+    var @angular="@angular";
 }
 
-<app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
+
+
+<!--Materil icons support and Robot fonts-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+
+
+<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {

@@ -1,0 +1,22 @@
+<h1>Indicators And Icons Material</h1>
+
+<md-chip-list class="mat-chip-list-stacked">
+    <md-chip *ngFor="let chipColor of availableColors"
+             selected="true"
+             color="{{chipColor.color}}">
+        {{chipColor.name}}
+    </md-chip>
+</md-chip-list>
+
+<h4>Icons</h4>
+<md-icon>thumbs_up</md-icon>
+<md-icon>home</md-icon>
+<md-icon>person</md-icon>
+
+<h4>Progres Bar</h4>
+
+<md-progress-bar mode="indeterminate"></md-progress-bar>
+
+<h4>Progres spinner</h4>
+
+<md-spinner></md-spinner>

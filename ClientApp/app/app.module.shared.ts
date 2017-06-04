@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
-import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { IndicatorsComponent } from './components/indicators/indicators.component';
 
 
 export const sharedConfig: NgModule = {
@@ -13,17 +13,17 @@ export const sharedConfig: NgModule = {
      
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
-        HomeComponent
+        IndicatorsComponent,
+        NavigationComponent,
+        ButtonsComponent
     ],
     imports: [
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
-            { path: '**', redirectTo: 'home' }
+            { path: '', redirectTo: 'buttons', pathMatch: 'full' },
+            { path: 'buttons', component: ButtonsComponent },
+            { path: 'navigation', component: NavigationComponent },
+            { path: 'indicators', component: IndicatorsComponent },
+            { path: '**', redirectTo: 'buttons' }
         ])
     ]
 };

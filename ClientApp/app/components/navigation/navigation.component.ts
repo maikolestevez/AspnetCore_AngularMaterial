@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'counter',
-    templateUrl: './counter.component.html'
+    selector: 'navigation',
+    templateUrl: './navigation.component.html',
+    styleUrls:['./navigation.component.css']
 })
-export class CounterComponent {
+export class NavigationComponent {
     public currentCount = 0;
 
     public incrementCounter() {

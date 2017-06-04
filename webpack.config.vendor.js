@@ -25,14 +25,15 @@ module.exports = (env) => {
                 '@angular/platform-browser',
                 '@angular/platform-browser-dynamic',
                 '@angular/router',
+               
                 'bootstrap',
                 'bootstrap/dist/css/bootstrap.css',
                 'es6-shim',
                 'es6-promise',
                 'event-source-polyfill',
                 'jquery',
-                'zone.js',
-                '@angular/material/prebuilt-themes/indigo-pink.css'
+                'zone.js'
+
             ]
         },
         output: {
